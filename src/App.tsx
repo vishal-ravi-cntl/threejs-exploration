@@ -1,8 +1,12 @@
+import { useEffect } from "react"
+import CreateAScene from "./assets/threejs-manual/creating-a-scene"
+
 function App() {
 
-  return (
-   <div className="text-2xl italic h-screen w-screen flex justify-center">Yoooo!</div>
-  )
+  useEffect(()=>{
+    CreateAScene();
+  },[])
+  return null
 }
 
 export default App
